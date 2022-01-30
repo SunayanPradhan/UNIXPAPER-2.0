@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DownloadActivity">
+
+    <ImageView
+        android:id="@+id/setImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop">
+
+    </ImageView>
+
+
+    <android.widget.Button
+        android:id="@+id/setButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/download_btn_state"
+        android:text="APPLY"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/google_sans_bold"
+        android:enabled="true">
+
+    </android.widget.Button>
+
+
+
+</RelativeLayout>

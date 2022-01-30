@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable-v24/baseline_nature_24.xml" value="0.2025" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable-v24/gradientvehicles.xml" value="0.1775" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable/donload_btn_state.xml" value="0.2005" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable/download_bg.xml" value="0.1775" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable/download_btn_state.xml" value="0.1015" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/drawable/download_fg.xml" value="0.2005" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_creative.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_download.xml" value="0.2359375" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_editors_choice.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_lifestyle.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_nature.xml" value="0.2359375" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_neon_art.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_quiet_calm.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_topcharts.xml" value="0.1109375" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_trending.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_vehicles.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/activity_wildlife.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/design_layout.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_download.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_nature.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_neon_art.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_vehicles.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_2/app/src/main/res/layout/fragment_wildlife.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientbg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientbus.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientnature.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientneonart.xml" value="0.1" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradienttrain.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradienttrending.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientvehicles.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/drawable-v24/gradientwildlife.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/activity_download.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/design_layout.xml" value="0.1" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_download.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_nature.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_neon_art.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_vehicles.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/fragment_wildlife.xml" value="0.25" />
+        <entry key="..\:/Users/sunay/AndroidStudioProjects/UNIXPAPER_V2/app/src/main/res/layout/slider_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
