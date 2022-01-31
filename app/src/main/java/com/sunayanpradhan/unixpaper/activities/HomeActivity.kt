@@ -1,8 +1,11 @@
 package com.sunayanpradhan.unixpaper.activities
 
 import android.content.Intent
+import android.graphics.drawable.Animatable
 import android.os.Bundle
 import android.view.View
+import android.view.animation.Animation
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -19,6 +22,8 @@ import com.sunayanpradhan.unixpaper.adapters.SliderAdapter
 import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 
 class HomeActivity : AppCompatActivity() {
+
+    lateinit var homeProgress:ProgressBar
 
 
     var sliderView: SliderView? = null
@@ -55,6 +60,10 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        homeProgress=findViewById(R.id.HomeProgress)
+
+
+
         app_bar_layout=findViewById(R.id.app_bar_layout)
 
         supportActionBar?.hide()
@@ -75,6 +84,7 @@ class HomeActivity : AppCompatActivity() {
 
             var intent=Intent(this,NatureActivity::class.java)
             startActivity(intent)
+
 
         }
 
@@ -134,25 +144,6 @@ class HomeActivity : AppCompatActivity() {
         homeRecyclerView?.setHasFixedSize(true)
 
 
-        homeRecyclerView?.setOnScrollChangeListener { _, scrollX, scrollY, _, oldScrollY ->
-            when {
-                scrollX > oldScrollY -> {
-
-                    app_bar_layout.isLiftOnScroll=false
-
-                }
-                scrollX == scrollY -> {
-
-                    app_bar_layout.isLiftOnScroll=true
-
-                }
-                else -> {
-                    app_bar_layout.isLiftOnScroll=true
-
-                }
-            }
-        }
-
 
 
         getData()
@@ -172,6 +163,7 @@ class HomeActivity : AppCompatActivity() {
                 homeRecyclerView?.layoutManager = GridLayoutManager(this@HomeActivity, 2)
                 Adapter = WallpaperAdapter(list, this@HomeActivity)
                 homeRecyclerView?.adapter = Adapter
+                homeProgress.visibility=View.GONE
 
             }
 

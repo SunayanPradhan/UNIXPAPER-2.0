@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,8 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class CreativeActivity : AppCompatActivity() {
+
+    lateinit var creativeProgress:ProgressBar
 
     var creativeRecyclerView: RecyclerView? = null
 
@@ -23,6 +27,9 @@ class CreativeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_creative)
 
 
+        creativeProgress=findViewById(R.id.CreativeProgress)
+
+
         setUpCreativeRecyclerView()
 
         supportActionBar?.hide()
@@ -31,7 +38,7 @@ class CreativeActivity : AppCompatActivity() {
     private fun setUpCreativeRecyclerView() {
         val Adapter= WallpaperAdapter(list, this.applicationContext)
 
-        creativeRecyclerView=findViewById(R.id.recyclerTopCharts)
+        creativeRecyclerView=findViewById(R.id.recyclerCreative)
 
         creativeRecyclerView?.adapter = Adapter
 
@@ -55,6 +62,7 @@ class CreativeActivity : AppCompatActivity() {
                 creativeRecyclerView?.layoutManager = GridLayoutManager(this@CreativeActivity, 2)
                 Adapter = WallpaperAdapter(list, this@CreativeActivity)
                 creativeRecyclerView?.adapter = Adapter
+                creativeProgress.visibility= View.GONE
 
             }
 

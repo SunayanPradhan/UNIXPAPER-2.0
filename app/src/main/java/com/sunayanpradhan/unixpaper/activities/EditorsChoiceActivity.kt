@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,8 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class EditorsChoiceActivity : AppCompatActivity() {
+
+    lateinit var editorsChoiceProgress:ProgressBar
 
     var editorsChoiceRecyclerView: RecyclerView? = null
 
@@ -22,6 +26,8 @@ class EditorsChoiceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_editors_choice)
+
+        editorsChoiceProgress=findViewById(R.id.EditorsChoiceProgress)
 
         setUpEditorsChoiceRecyclerView()
 
@@ -60,6 +66,7 @@ class EditorsChoiceActivity : AppCompatActivity() {
                 editorsChoiceRecyclerView?.layoutManager = GridLayoutManager(this@EditorsChoiceActivity, 2)
                 Adapter = WallpaperAdapter(list, this@EditorsChoiceActivity)
                 editorsChoiceRecyclerView?.adapter = Adapter
+                editorsChoiceProgress.visibility= View.GONE
 
             }
 

@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,9 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class LifestyleActivity : AppCompatActivity() {
+
+    lateinit var lifestyleProgress:ProgressBar
+
     var lifestyleRecyclerView: RecyclerView? = null
 
     var list = ArrayList<String>()
@@ -20,6 +25,8 @@ class LifestyleActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lifestyle)
+
+        lifestyleProgress=findViewById(R.id.LifestyleProgress)
 
         setUpTopChartsRecyclerView()
 
@@ -58,6 +65,7 @@ class LifestyleActivity : AppCompatActivity() {
                 lifestyleRecyclerView?.layoutManager = GridLayoutManager(this@LifestyleActivity, 2)
                 Adapter = WallpaperAdapter(list, this@LifestyleActivity)
                 lifestyleRecyclerView?.adapter = Adapter
+                lifestyleProgress.visibility=View.GONE
 
             }
 

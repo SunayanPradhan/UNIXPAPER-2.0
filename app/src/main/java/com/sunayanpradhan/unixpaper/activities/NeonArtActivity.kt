@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,8 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class NeonArtActivity : AppCompatActivity() {
+
+    lateinit var neonArtProgress:ProgressBar
 
     var neonartRecyclerView: RecyclerView?=null
 
@@ -22,6 +26,8 @@ class NeonArtActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_neon_art)
+
+        neonArtProgress=findViewById(R.id.NeonArtProgress)
 
         supportActionBar?.hide()
 
@@ -54,6 +60,7 @@ class NeonArtActivity : AppCompatActivity() {
                 neonartRecyclerView?.layoutManager = GridLayoutManager(this@NeonArtActivity, 2)
                 Adapter = WallpaperAdapter(list, this@NeonArtActivity)
                 neonartRecyclerView?.adapter = Adapter
+                neonArtProgress.visibility= View.GONE
 
             }
 

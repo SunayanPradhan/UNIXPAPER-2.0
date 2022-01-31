@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -12,6 +14,8 @@ import java.util.ArrayList
 
 class TrendingActivity : AppCompatActivity() {
 
+    lateinit var trendingProgress:ProgressBar
+
     var trendingRecyclerView: RecyclerView? = null
 
     var list = ArrayList<String>()
@@ -21,6 +25,8 @@ class TrendingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trending)
+
+        trendingProgress=findViewById(R.id.TrendingProgress)
 
         setUpNatureRecyclerView()
 
@@ -57,6 +63,8 @@ class TrendingActivity : AppCompatActivity() {
                 trendingRecyclerView?.layoutManager = GridLayoutManager(this@TrendingActivity, 2)
                 Adapter = WallpaperAdapter(list, this@TrendingActivity)
                 trendingRecyclerView?.adapter = Adapter
+
+                trendingProgress.visibility= View.GONE
 
             }
 

@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,8 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class NatureActivity : AppCompatActivity() {
+
+    lateinit var natureProgress:ProgressBar
 
     var natureRecyclerView: RecyclerView? = null
 
@@ -22,6 +26,7 @@ class NatureActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nature)
         setUpNatureRecyclerView()
+        natureProgress=findViewById(R.id.NatureProgress)
 
         supportActionBar?.hide()
 
@@ -55,6 +60,7 @@ class NatureActivity : AppCompatActivity() {
                 natureRecyclerView?.layoutManager = GridLayoutManager(this@NatureActivity, 2)
                 Adapter = WallpaperAdapter(list, this@NatureActivity)
                 natureRecyclerView?.adapter = Adapter
+                natureProgress.visibility= View.GONE
 
             }
 

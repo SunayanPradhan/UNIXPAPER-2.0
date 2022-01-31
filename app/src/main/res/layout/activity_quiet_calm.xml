@@ -54,4 +54,17 @@
         </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/QuietCalmProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginRight="175dp"
+        android:visibility="visible">
+
+    </ProgressBar>
+
 </RelativeLayout>

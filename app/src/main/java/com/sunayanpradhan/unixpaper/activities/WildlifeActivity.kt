@@ -2,6 +2,8 @@ package com.sunayanpradhan.unixpaper.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -11,6 +13,8 @@ import com.sunayanpradhan.unixpaper.adapters.WallpaperAdapter
 import java.util.ArrayList
 
 class WildlifeActivity : AppCompatActivity() {
+
+    lateinit var wildlifeProgress:ProgressBar
 
     var wildlifeRecyclerView: RecyclerView?=null
 
@@ -22,6 +26,8 @@ class WildlifeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_wildlife)
+
+        wildlifeProgress=findViewById(R.id.WildlifeProgress)
 
         supportActionBar?.hide()
 
@@ -54,6 +60,7 @@ class WildlifeActivity : AppCompatActivity() {
                 wildlifeRecyclerView?.layoutManager = GridLayoutManager(this@WildlifeActivity, 2)
                 Adapter = WallpaperAdapter(list, this@WildlifeActivity)
                 wildlifeRecyclerView?.adapter = Adapter
+                wildlifeProgress.visibility=View.GONE
 
             }
 
