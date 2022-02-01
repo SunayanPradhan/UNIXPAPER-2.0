@@ -26,6 +26,8 @@ class QuietCalmActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiet_calm)
 
+        quietCalmProgress=findViewById(R.id.QuietCalmProgress)
+
         setUpQuietCalmRecyclerView()
 
         supportActionBar?.hide()
